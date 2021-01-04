@@ -1,10 +1,20 @@
 <?php
 
-namespace Tests;
+namespace Package\Test;
 
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
-abstract class TestCase extends BaseTestCase
+class TestCase extends OrchestraTestCase
 {
-    use CreatesApplication;
+    /**
+     * Load package service provider
+     *
+     * @param  \Illuminate\Foundation\Application $app
+     *
+     * @return HaiCS\Laravel\Generator\Providers\GeneratorServiceProvider
+     */
+    protected function getPackageProviders($app)
+    {
+        return [PacakgeServiceProvider::class];
+    }
 }
