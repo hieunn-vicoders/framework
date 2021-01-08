@@ -1,6 +1,6 @@
 <?php
 
-namespace Package\Test;
+namespace Framework\Test;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
