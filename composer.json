@@ -39,8 +39,7 @@
         "webpress/tag-manager": "^0.0",
         "webpress/user-manager": "^0.0",
         "webpress/utility": "^0.0",
-        "webpress/view-model": "^0.0",
-        "webpress/email-config": "^0.0"
+        "webpress/view-model": "^0.0"
     },
     "require-dev": {
     },
