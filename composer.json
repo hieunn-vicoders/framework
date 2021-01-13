@@ -1,6 +1,6 @@
 {
-    "name": "webpress/framework",
-    "description": "A Package With All Webpress Package",
+    "name": "sonhaichu/framework",
+    "description": "Boilerplate template for laravel package",
     "authors": [
         {
             "name": "sonhaichu",
@@ -10,58 +10,40 @@
     "autoload": {
         "classmap": [],
         "psr-4": {
-            "VCComponent\\Laravel\\Framework\\": "src/app/"
+            "Package\\": "src/app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VCComponent\\Laravel\\Framework\\Test": "tests/"
+            "Package\\Test\\": "tests/"
         }
     },
     "require": {
-        "php": "^7.2.5|8.0",
-        "cviebrock/eloquent-sluggable": "7.0.1",
-        "fideloper/proxy": "4.2.2",
-        "fruitcake/laravel-cors": "v1.0.6",
-        "guzzlehttp/guzzle": "6.3.3",
-        "laravel/framework": "^7.0",
-        "laravel/socialite": "^4.4",
-        "laravel/tinker": "^2.0",
-        "laravel/ui": "^2.1",
-        "nesbot/carbon": "2.32.0",
+        "webpress/analytics": "self.version",
+        "webpress/category-manager": "self.version",
+        "webpress/comment-manager": "self.version",
+        "webpress/configuration": "self.version",
+        "webpress/contact-manager": "self.version",
+        "webpress/core": "self.version",
+        "webpress/dynamic": "self.version",
+        "webpress/media-manager": "self.version",
+        "webpress/menu-manager": "self.version",
+        "webpress/order-manager": "self.version",
+        "webpress/payment": "self.version",
+        "webpress/post-manager": "self.version",
+        "webpress/product-manager": "self.version",
+        "webpress/script-manager": "self.version",
+        "webpress/search": "self.version",
+        "webpress/seo": "self.version",
+        "webpress/sitemap": "self.version",
+        "webpress/tag-manager": "self.version",
+        "webpress/user-manager": "self.version",
+        "webpress/utility": "self.version",
+        "webpress/view-model": "self.version",
+        "webpress/email-config": "self.version"
+    },
 
-        "webpress/analytics": "^0.0",
-        "webpress/category-manager": "^0.0",
-        "webpress/comment-manager": "^0.0",
-        "webpress/configuration": "^0.0",
-        "webpress/contact-manager": "^0.0",
-        "webpress/core": "^0.1",
-        "webpress/dynamic": "^1.0",
-        "webpress/media-manager": "^1.0",
-        "webpress/menu-manager": "^0.1",
-        "webpress/order-manager": "^0.0",
-        "webpress/payment": "^0.0",
-        "webpress/post-manager": "^0.0",
-        "webpress/product-manager": "^0.0",
-        "webpress/script-manager": "^0.0",
-        "webpress/search": "^0.0",
-        "webpress/seo": "^0.0",
-        "webpress/sitemap": "^0.0",
-        "webpress/tag-manager": "^0.0",
-        "webpress/user-manager": "^0.0",
-        "webpress/utility": "^0.0",
-        "webpress/view-model": "^0.0",
-        "webpress/email-config": "^0.0"
-    },
-    "require-dev": {
-        "facade/ignition": "2.0.10",
-        "fakerphp/faker": "1.9.2",
-        "mockery/mockery": "1.3.3",
-        "nunomaduro/collision": "4.3.0",
-        "phpunit/phpunit": "8.5.13",
-        "orchestra/testbench": "5.0.0",
-        "spatie/phpunit-watcher": "1.23.0"
-    },
+    "require-dev": {},
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
