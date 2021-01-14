@@ -44,7 +44,8 @@
         "webpress/redirecter":"^0.0",
         "webpress/static-file":"^0.0",
         "webpress/export-excel":"^0.0",
-        "webpress/language":"^0.0"
+        "webpress/language":"^0.0",
+        "webpress/dynamic-contact-form":"^0.0"
     },
     "require-dev": {
     },
