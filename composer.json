@@ -39,7 +39,12 @@
         "webpress/tag-manager": "^0.0",
         "webpress/user-manager": "^0.0",
         "webpress/utility": "^0.0",
-        "webpress/view-model": "^0.0"
+        "webpress/view-model": "^0.0",
+        "webpress/site-protection":"^0.0",
+        "webpress/redirecter":"^0.0",
+        "webpress/static-file":"^0.0",
+        "webpress/export-excel":"^0.0",
+        "webpress/language":"^0.0"
     },
     "require-dev": {
     },
