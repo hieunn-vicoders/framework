@@ -41,11 +41,12 @@
         "webpress/utility": "^0.0",
         "webpress/view-model": "^0.0",
         "webpress/site-protection":"^0.0",
-        "webpress/redirecter":"^0.0",
+        "webpress/redirector":"^0.0",
         "webpress/static-file":"^0.0",
         "webpress/export-excel":"^0.0",
         "webpress/language":"^0.0",
-        "webpress/dynamic-contact-form":"^0.0"
+        "webpress/dynamic-contact-form":"^0.0",
+        "webpress/email-config": "^0.0"
     },
     "require-dev": {
     },
