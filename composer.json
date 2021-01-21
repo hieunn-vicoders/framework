@@ -22,7 +22,7 @@
         "webpress/analytics": "^0.0",
         "webpress/category-manager": "^0.0",
         "webpress/comment-manager": "^0.0",
-        "webpress/configuration": "^0.0",
+        "webpress/configuration": "^0.1",
         "webpress/contact-manager": "^0.0",
         "webpress/core": "^0.1",
         "webpress/dynamic": "^1.0",
