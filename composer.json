@@ -46,7 +46,8 @@
         "webpress/export-excel":"^0.0",
         "webpress/language":"^0.0",
         "webpress/dynamic-contact-form":"^0.0",
-        "webpress/email-config": "^0.0"
+        "webpress/email-config": "^0.0",
+        "webpress/notification": "^0.0"
     },
     "require-dev": {
     },
