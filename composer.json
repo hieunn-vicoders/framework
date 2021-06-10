@@ -31,7 +31,7 @@
         "webpress/order-manager": "^0.3",
         "webpress/payment": "^0.0",
         "webpress/post-manager": "^0.2",
-        "webpress/product-manager": "^0.2",
+        "webpress/product-manager": "^0.3",
         "webpress/script-manager": "^0.0",
         "webpress/search": "^0.0",
         "webpress/seo": "^0.0",
