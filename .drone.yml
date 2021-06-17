@@ -31,8 +31,8 @@ steps:
       drone_token:
         from_secret: webpress_vn_org_drone_secret
       params:
-        - DRONE_REPO=${DRONE_REPO}
-        - DRONE_TAG=${DRONE_TAG}
+        - PACKAGE_NAME=${DRONE_REPO}
+        - PACKAGE_VERSION=${DRONE_TAG}
       repositories:
         - webpress-core/packages.webpress.vn
 # volumes:
