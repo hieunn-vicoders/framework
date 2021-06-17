@@ -29,7 +29,7 @@ steps:
     settings:
       drone_server: https://github.drone.vicoders.com
       drone_token:
-        from_secret: webpress_core_org_drone_secret
+        from_secret: webpress_vn_org_drone_secret
       params:
         - DRONE_REPO=${DRONE_REPO}
         - DRONE_TAG=${DRONE_TAG}
