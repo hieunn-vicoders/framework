@@ -23,7 +23,7 @@ steps:
         from_secret: git_auto_tag_user
       git_token:
         from_secret: git_auto_tag_token
-      dry_run: true
+      dry_run: false
   - name: Build Packages
     image: nightfuryest/drone-downstream
     settings:
