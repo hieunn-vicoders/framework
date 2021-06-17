@@ -40,23 +40,52 @@
         "webpress/user-manager": "^0.1",
         "webpress/utility": "^0.1",
         "webpress/view-model": "^0.0",
-        "webpress/site-protection":"^0.0",
-        "webpress/redirector":"^0.0",
-        "webpress/static-file":"^0.0",
-        "webpress/export-excel":"^0.0",
-        "webpress/language":"^0.0",
-        "webpress/dynamic-contact-form":"^0.0",
+        "webpress/site-protection": "^0.0",
+        "webpress/redirector": "^0.0",
+        "webpress/static-file": "^0.0",
+        "webpress/export-excel": "^0.0",
+        "webpress/language": "^0.0",
+        "webpress/dynamic-contact-form": "^0.0",
         "webpress/email-config": "^0.0",
         "webpress/notification": "^0.0"
     },
-    "require-dev": {
+    "replace": {
+        "webpress/analytics": "self.version",
+        "webpress/category-manager": "self.version",
+        "webpress/comment-manager": "self.version",
+        "webpress/configuration": "self.version",
+        "webpress/contact-manager": "self.version",
+        "webpress/core": "self.version",
+        "webpress/dynamic": "self.version",
+        "webpress/media-manager": "self.version",
+        "webpress/menu-manager": "self.version",
+        "webpress/order-manager": "self.version",
+        "webpress/payment": "self.version",
+        "webpress/post-manager": "self.version",
+        "webpress/product-manager": "self.version",
+        "webpress/script-manager": "self.version",
+        "webpress/search": "self.version",
+        "webpress/seo": "self.version",
+        "webpress/sitemap": "self.version",
+        "webpress/tag-manager": "self.version",
+        "webpress/user-manager": "self.version",
+        "webpress/utility": "self.version",
+        "webpress/view-model": "self.version",
+        "webpress/site-protection": "self.version",
+        "webpress/redirector": "self.version",
+        "webpress/static-file": "self.version",
+        "webpress/export-excel": "self.version",
+        "webpress/language": "self.version",
+        "webpress/dynamic-contact-form": "^0.0",
+        "webpress/email-config": "self.version",
+        "webpress/notification": "self.version"
     },
+    "require-dev": {},
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "laravel": {
-            "providers": [
-            ]
+            "providers": []
         }
     },
     "scripts": {
