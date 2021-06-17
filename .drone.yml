@@ -3,19 +3,19 @@ kind: pipeline
 type: docker
 name: default
 globals:
-  - &docker_creds
-    username:
-      from_secret: docker_hub_user
-    password:
-      from_secret: docker_hub_password
+  # - &docker_creds
+  #   username:
+  #     from_secret: docker_hub_user
+  #   password:
+  #     from_secret: docker_hub_password
 steps:
-  - name: prepare
-    image: busybox
-    commands:
-      - mkdir -p /cache/${DRONE_REPO}/docker
-    volumes:
-      - name: cache
-        path: /cache
+  # - name: prepare
+  #   image: busybox
+  #   commands:
+  #     - mkdir -p /cache/${DRONE_REPO}/docker
+  #   volumes:
+  #     - name: cache
+  #       path: /cache
   - name: autotag
     image: nightfuryest/drone-plugin-package-auto-tag
     settings:
@@ -24,16 +24,27 @@ steps:
       git_token:
         from_secret: git_auto_tag_token
       dry_run: true
-volumes:
-  - name: cache
-    host:
-      path: /var/cache
-  - name: docker
-    host:
-      path: /var/cache/${DRONE_REPO}/docker
-  - name: yarn
-    host:
-      path: /var/cache/${DRONE_REPO}/yarn
+  - name: Build Packages
+    image: nightfuryest/drone-downstream
+    settings:
+      drone_server: https://github.drone.vicoders.com
+      drone_token:
+        from_secret: webpress_core_org_drone_secret
+      params:
+        - DRONE_REPO=${DRONE_REPO}
+        - DRONE_TAG=${DRONE_TAG}
+      repositories:
+        - webpress-core/packages.webpress.vn
+# volumes:
+#   - name: cache
+#     host:
+#       path: /var/cache
+#   - name: docker
+#     host:
+#       path: /var/cache/${DRONE_REPO}/docker
+#   - name: yarn
+#     host:
+#       path: /var/cache/${DRONE_REPO}/yarn
 
 trigger:
   event:
