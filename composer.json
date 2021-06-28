@@ -76,7 +76,7 @@
         "webpress/static-file": "self.version",
         "webpress/export-excel": "self.version",
         "webpress/language": "self.version",
-        "webpress/dynamic-contact-form": "^0.0",
+        "webpress/dynamic-contact-form": "self.version",
         "webpress/email-config": "self.version",
         "webpress/notification": "self.version"
     },
