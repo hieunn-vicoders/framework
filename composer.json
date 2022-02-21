@@ -47,7 +47,8 @@
         "webpress/language": "^3.0",
         "webpress/dynamic-contact-form": "^3.0",
         "webpress/email-config": "^3.0",
-        "webpress/notification": "^3.0"
+        "webpress/notification": "^3.0",
+        "webpress/meta": "^3.0"
     },
     "require-dev": {},
     "minimum-stability": "dev",
