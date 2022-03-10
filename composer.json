@@ -51,6 +51,7 @@
         "webpress/review": "^3.1",
         "webpress/promotion": "^3.1",
         "webpress/interaction": "^3.1",
+        "webpress/dictionary": "^3.1",
         "webpress/meta": "^3.1",
         "webpress/shipment": "^3.1"
     },

@@ -2,20 +2,7 @@
 kind: pipeline
 type: docker
 name: default
-globals:
-  # - &docker_creds
-  #   username:
-  #     from_secret: docker_hub_user
-  #   password:
-  #     from_secret: docker_hub_password
 steps:
-  # - name: prepare
-  #   image: busybox
-  #   commands:
-  #     - mkdir -p /cache/${DRONE_REPO}/docker
-  #   volumes:
-  #     - name: cache
-  #       path: /cache
   - name: autotag
     image: nightfuryest/drone-plugin-package-auto-tag
     settings:
@@ -35,17 +22,6 @@ steps:
         - PACKAGE_VERSION=${DRONE_TAG}
       repositories:
         - webpress-core/packages.webpress.vn
-# volumes:
-#   - name: cache
-#     host:
-#       path: /var/cache
-#   - name: docker
-#     host:
-#       path: /var/cache/${DRONE_REPO}/docker
-#   - name: yarn
-#     host:
-#       path: /var/cache/${DRONE_REPO}/yarn
-
 trigger:
   event:
     - tag
